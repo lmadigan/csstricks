@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Bold Text Example</title>
+<link rel="stylesheet" href="slideshow.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="./slideshow.js"></script>
+
+</head>
+
+<body>
+  <div class='slideshow-container'>
+  	<div class='slideshow'>
+       <div><img src='images/recent_places/sf_couch.png' alt="image01"/></div>
+       <div><img src='images/recent_places/sf_bed.png' alt="image02"/></div>
+       <div><img src='images/recent_places/sf_pillows.png' alt="image03"/></div>
+       <div><img src='images/recent_places/sf_shells.png' alt="image04"/></div>
+       <div><img src='images/recent_places/sf_windows.png' alt="image05"/></div>
+       <div><img src='images/recent_places/sf_wine.png' alt="image06"/></div>
+       <div><img src='images/recent_places/sf_table.png' alt="image07"/></div>
+       <div><img src='images/recent_places/sf_elephant.png' alt="image08"/></div>
+  	</div>
+    <div class='slideshow-1'>
+       <div><img src='images/recent_places/sf_couch.png' alt="image01"/></div>
+       <div><img src='images/recent_places/sf_bed.png' alt="image02"/></div>
+       <div><img src='images/recent_places/sf_pillows.png' alt="image03"/></div>
+       <div><img src='images/recent_places/sf_shells.png' alt="image04"/></div>
+       <div><img src='images/recent_places/sf_windows.png' alt="image05"/></div>
+       <div><img src='images/recent_places/sf_wine.png' alt="image06"/></div>
+       <div><img src='images/recent_places/sf_table.png' alt="image07"/></div>
+       <div><img src='images/recent_places/sf_elephant.png' alt="image08"/></div>
+  	</div>
+    <div class='slideshow-2'>
+       <div><img src='images/recent_places/sf_couch.png' alt="image01"/></div>
+       <div><img src='images/recent_places/sf_bed.png' alt="image02"/></div>
+       <div><img src='images/recent_places/sf_pillows.png' alt="image03"/></div>
+       <div><img src='images/recent_places/sf_shells.png' alt="image04"/></div>
+       <div><img src='images/recent_places/sf_windows.png' alt="image05"/></div>
+       <div><img src='images/recent_places/sf_wine.png' alt="image06"/></div>
+       <div><img src='images/recent_places/sf_table.png' alt="image07"/></div>
+       <div><img src='images/recent_places/sf_elephant.png' alt="image08"/></div>
+  	</div>
+  </div>
+
+  <script>
+
+    $(".slideshow > div:gt(0)").hide();
+    $(".slideshow").hover(
+      function () {
+        scroll = setInterval(function() {
+          $('.slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('.slideshow');
+        },  2000);
+      }, function() {
+        clearInterval(scroll);
+      }
+    );
+
+    $(".slideshow-1 > div:gt(0)").hide();
+    $(".slideshow-1").hover(
+      function () {
+        scroll = setInterval(function() {
+          $('.slideshow-1 > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('.slideshow-1');
+        },  2000);
+      }, function() {
+        clearInterval(scroll);
+      }
+    );
+
+    $(".slideshow-2 > div:gt(0)").hide();
+    $(".slideshow-2").hover(
+      function () {
+        scroll = setInterval(function() {
+          $('.slideshow-2 > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('.slideshow-2');
+        },  2000);
+      }, function() {
+        clearInterval(scroll);
+      }
+    );
+      </script>
+
+
+</body>
+</html>

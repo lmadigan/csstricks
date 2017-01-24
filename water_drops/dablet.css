@@ -25,7 +25,7 @@ div.wave > span{
   min-width: 60px;
   margin: 2px;
 	height: 160px;
-	animation: animate 2.5s ease-in-out alternate infinite;
+	animation: animate 2.8s ease-in-out alternate infinite;
 
 }
 
@@ -52,54 +52,10 @@ div.wave > span:nth-child(5){
 div.wave > span:nth-child(6){
   color: #f13f2d;
 	animation-delay: 1s;
-  margin-left: -5px;
+  margin-left: -20px;
 }
 
 @keyframes animate{
 	/*to { height: 100px; }*/
   to { transform:scaleY(1.4);}
 }
-
-/*div.google-letters{
-  top: 200;
-}
-
-div.google-letters > span{
-  font-size: 100px;
-  width:50px;
-  animation: letter 2s ease-in-out alternate infinite;
-}
-
-div.google-letters > span:nth-child(1){
-  color: red;
-}
-
-div.google-letters > span:nth-child(2){
-  color: yellow;
-  animation-delay: .2s;
-}
-
-div.google-letters > span:nth-child(3){
-  color: green;
-  animation-delay: .4s;
-}
-
-div.google-letters > span:nth-child(4){
-  color: blue;
-  animation-delay: .6s;
-}
-
-div.google-letters > span:nth-child(5){
-  color: green;
-  animation-delay: .8s;
-}
-
-div.google-letters > span:nth-child(6){
-  color: red;
-  animation-delay: 1s;
-}
-
-@keyframes letter {
-  from { transform:scaleY(0.8); }
-  to { transform:scaleY(1.5);}
-}*/
