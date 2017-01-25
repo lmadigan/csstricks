@@ -25,7 +25,7 @@ div.wave > span{
   min-width: 60px;
   margin: 2px;
 	height: 160px;
-	animation: animate 2.8s ease-in-out alternate infinite;
+	animation: animate 1.2s ease-in-out alternate infinite;
 
 }
 

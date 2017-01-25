@@ -1,0 +1,24 @@
+.outer-roll div, span, h1{
+  font-family: 'Nunito', sans-serif;
+}
+
+.outer-roll{
+  height:200px;
+  width: 100%;
+}
+
+.outer-roll{
+  font-size: 50px;
+}
+
+.roll{
+  display: flex;
+  justify-content: flex-end;
+  animation: slide 25s linear infinite;
+}
+
+
+@keyframes slide{
+	0% { justify-content: flex-end; }
+  100% { justify-content: flex-start;}
+}
